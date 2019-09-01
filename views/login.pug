@@ -1,0 +1,14 @@
+html
+    head
+        title="Strona logowania"
+        style 
+            include ./style.css
+    body
+        div.container
+            h1 Zaloguj się na swoim koncie Google
+            form(action="http://localhost:3000/logged",method="GET")
+                p Imię:
+                    input(type="text",name="first_name")
+                p Nazwisko: 
+                    input(type="text",name="last_name")
+                    input(type="submit", value="Zaloguj się") 
